@@ -22,6 +22,8 @@ public class RankingStarter : IStartable
     private async UniTask LoadRanking()
     {
         _rankingView.Initialize(_viewModel);
-        await _viewModel.LoadAsync();
+
+        var command = new LoadRankingCommand(_viewModel);
+        await command.ExecuteAsync();
     }
 }

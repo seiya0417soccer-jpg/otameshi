@@ -7,7 +7,7 @@ public class RankingViewModel
     private readonly RankingRepository _repository;
 
     public ReactiveProperty<List<PlayerScore>> Rankings { get; } = new();
-    public ReactiveProperty<bool> IsLoading { get; } = new(false);
+    public ReactiveProperty<RankingState> State { get; } = new();
 
     public RankingViewModel(RankingRepository repository)
     {
@@ -16,8 +16,16 @@ public class RankingViewModel
 
     public async UniTask LoadAsync()
     {
-        IsLoading.Value = true;
-        Rankings.Value = await _repository.GetRankingAsync();
-        IsLoading.Value = false;
+        State.Value = new LoadingState();
+
+        try
+        {
+            Rankings.Value = await _repository.GetRankingAsync();
+            State.Value = new SuccessState();
+        }
+        catch
+        {
+            State.Value = new ErrorState("Žæ“¾‚ÉŽ¸”s‚µ‚Ü‚µ‚½");
+        }
     }
 }

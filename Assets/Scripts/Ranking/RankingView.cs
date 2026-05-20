@@ -19,11 +19,16 @@ public class RankingView : MonoBehaviour
         {
             UpdateView(rankings);
         }).AddTo(this);
+
+        _viewModel.State.Subscribe(state =>
+        {
+            if (state == null) return;
+            state.Handle(_viewModel);
+        }).AddTo(this);
     }
 
     private void UpdateView(List<PlayerScore> rankings)
     {
-        // 既存のエントリを削除
         foreach (Transform child in _entryContainer)
         {
             Destroy(child.gameObject);
@@ -31,7 +36,6 @@ public class RankingView : MonoBehaviour
 
         if (rankings == null) return;
 
-        // ランキングエントリを生成
         for (int i = 0; i < rankings.Count; i++)
         {
             var entry = Instantiate(_entryPrefab, _entryContainer);
