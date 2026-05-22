@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Ranking\RankingStarter.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingCommand.cs" />
     <Compile Include="Assets\Scripts\Ranking\FakeRankingApiClient.cs" />
+    <Compile Include="Assets\Scripts\Ranking\PracticeScript.cs" />
     <Compile Include="Assets\Scripts\Ranking\ObserverExample.cs" />
   </ItemGroup>
   <ItemGroup>
