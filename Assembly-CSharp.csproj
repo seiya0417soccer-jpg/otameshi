@@ -64,16 +64,20 @@
     <Compile Include="Assets\Scripts\Ranking\IRankingApiClient.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingState.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingRepository.cs" />
+    <Compile Include="Assets\Scripts\Ranking\RankingView_BASE_1780.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingLifetimeScope.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingApiClient.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingViewModel.cs" />
+    <Compile Include="Assets\Scripts\Ranking\RankingView_LOCAL_1780.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingView.cs" />
     <Compile Include="Assets\Scripts\Ranking\BypassCertificate.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingStarter.cs" />
+    <Compile Include="Assets\Scripts\Ranking\RankingView_REMOTE_1780.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingCommand.cs" />
     <Compile Include="Assets\Scripts\Ranking\FakeRankingApiClient.cs" />
     <Compile Include="Assets\Scripts\Ranking\PracticeScript.cs" />
     <Compile Include="Assets\Scripts\Ranking\ObserverExample.cs" />
+    <Compile Include="Assets\Scripts\Ranking\RankingView_BACKUP_1780.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

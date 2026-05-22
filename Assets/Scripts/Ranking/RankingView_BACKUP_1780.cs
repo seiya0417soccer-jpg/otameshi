@@ -40,7 +40,11 @@ public class RankingView : MonoBehaviour
         {
             var entry = Instantiate(_entryPrefab, _entryContainer);
             var text = entry.GetComponent<TextMeshProUGUI>();
-            text.text = $"#{i + 1}  {rankings[i].Name}  {rankings[i].Score}pts";
+<<<<<<< HEAD
+            text.text = $"No.{i + 1}  {rankings[i].Name}  {rankings[i].Score}pts";
+=======
+            text.text = $"Rank{i + 1}  {rankings[i].Name}  {rankings[i].Score}pts";
+>>>>>>> feature/conflict-practice
         }
     }
 
