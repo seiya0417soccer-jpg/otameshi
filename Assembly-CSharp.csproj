@@ -61,9 +61,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Ranking\PlayerScore.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Strategy\BowAttack.cs" />
     <Compile Include="Assets\Scripts\Ranking\IRankingApiClient.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingState.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Strategy\PlayerCombat.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Strategy\SwordAttack.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingRepository.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Strategy\MagicAttack.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingLifetimeScope.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingApiClient.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingViewModel.cs" />
@@ -72,6 +76,7 @@
     <Compile Include="Assets\Scripts\Ranking\RankingStarter.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingCommand.cs" />
     <Compile Include="Assets\Scripts\Ranking\FakeRankingApiClient.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Strategy\IAttackStrategy.cs" />
     <Compile Include="Assets\Scripts\Ranking\PracticeScript.cs" />
     <Compile Include="Assets\Scripts\Ranking\ObserverExample.cs" />
   </ItemGroup>
