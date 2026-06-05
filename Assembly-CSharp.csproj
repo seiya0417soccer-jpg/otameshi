@@ -71,9 +71,12 @@
     <Compile Include="Assets\Scripts\Patterns\Builder\EnemyBuilder.cs" />
     <Compile Include="Assets\Scripts\Patterns\Strategy\PlayerCombat.cs" />
     <Compile Include="Assets\Scripts\Patterns\Strategy\SwordAttack.cs" />
+    <Compile Include="Assets\Scripts\Patterns\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\Patterns\ObjectPool\Bullet.cs" />
     <Compile Include="Assets\Scripts\Patterns\Builder\EnemyData.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingRepository.cs" />
     <Compile Include="Assets\Scripts\Patterns\Strategy\MagicAttack.cs" />
+    <Compile Include="Assets\Scripts\Patterns\ObjectPool\Gun.cs" />
     <Compile Include="Assets\Scripts\Patterns\Factory\EnemyFactory.cs" />
     <Compile Include="Assets\Scripts\Patterns\Memento\PlayerHistory.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingLifetimeScope.cs" />
