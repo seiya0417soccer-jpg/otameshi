@@ -68,8 +68,10 @@
     <Compile Include="Assets\Scripts\Patterns\Strategy\BowAttack.cs" />
     <Compile Include="Assets\Scripts\Ranking\IRankingApiClient.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingState.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Builder\EnemyBuilder.cs" />
     <Compile Include="Assets\Scripts\Patterns\Strategy\PlayerCombat.cs" />
     <Compile Include="Assets\Scripts\Patterns\Strategy\SwordAttack.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Builder\EnemyData.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingRepository.cs" />
     <Compile Include="Assets\Scripts\Patterns\Strategy\MagicAttack.cs" />
     <Compile Include="Assets\Scripts\Patterns\Factory\EnemyFactory.cs" />
@@ -81,6 +83,7 @@
     <Compile Include="Assets\Scripts\Ranking\BypassCertificate.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingStarter.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingCommand.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Builder\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Ranking\FakeRankingApiClient.cs" />
     <Compile Include="Assets\Scripts\Patterns\Strategy\IAttackStrategy.cs" />
     <Compile Include="Assets\Scripts\Ranking\PracticeScript.cs" />
