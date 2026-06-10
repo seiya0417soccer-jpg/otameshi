@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Ranking\PlayerScore.cs" />
     <Compile Include="Assets\Scripts\Patterns\Factory\IEnemy.cs" />
     <Compile Include="Assets\Scripts\Patterns\Factory\Orc.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Facade\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Patterns\Factory\Goblin.cs" />
     <Compile Include="Assets\Scripts\Patterns\Memento\PlayerMemento.cs" />
     <Compile Include="Assets\Scripts\Patterns\Strategy\BowAttack.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\Patterns\ObjectPool\Bullet.cs" />
     <Compile Include="Assets\Scripts\Patterns\Builder\EnemyData.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingRepository.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Facade\SfxPlayer.cs" />
     <Compile Include="Assets\Scripts\Patterns\Strategy\MagicAttack.cs" />
     <Compile Include="Assets\Scripts\Patterns\ObjectPool\Gun.cs" />
     <Compile Include="Assets\Scripts\Patterns\Factory\EnemyFactory.cs" />
@@ -82,15 +84,18 @@
     <Compile Include="Assets\Scripts\Ranking\RankingLifetimeScope.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingApiClient.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingViewModel.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Facade\AudioFacade.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingView.cs" />
     <Compile Include="Assets\Scripts\Ranking\BypassCertificate.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingStarter.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Facade\AudioTester.cs" />
     <Compile Include="Assets\Scripts\Ranking\RankingCommand.cs" />
     <Compile Include="Assets\Scripts\Patterns\Builder\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Ranking\FakeRankingApiClient.cs" />
     <Compile Include="Assets\Scripts\Patterns\Strategy\IAttackStrategy.cs" />
     <Compile Include="Assets\Scripts\Ranking\PracticeScript.cs" />
     <Compile Include="Assets\Scripts\Ranking\ObserverExample.cs" />
+    <Compile Include="Assets\Scripts\Patterns\Facade\AudioFader.cs" />
     <Compile Include="Assets\Scripts\Patterns\Memento\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Patterns\Factory\GameManager.cs" />
   </ItemGroup>
