@@ -7,35 +7,58 @@ Unity開発における設計パターンや外部ライブラリの使い方を
 
 検証したデザインパターン
 Singleton：インスタンスの重複防止とDontDestroyOnLoadの正しい実装
+
 Factory：敵キャラクターの生成ロジックの抽象化
+
 Builder：EnemyDataなど複雑なオブジェクトの段階的な組み立て
+
 Strategy：剣・弓・魔法など攻撃方法の実行時切り替え
+
 Memento：プレイヤー状態の保存・巻き戻し
+
 Object Pool：弾丸の再利用によるコスト削減
+
 Facade：BGM・SE・フェードなどオーディオ処理の窓口統一
+
 Command：ランキング読み込み処理のカプセル化
+
 State：ランキング取得（読込中・成功・失敗）の状態管理
 
 検証した技術・ライブラリ
 VContainer：DIフレームワークによる依存関係の管理
+
 R3：Reactive Extensionsによるイベント駆動設計
+
 UniTask：非同期処理（Docker API通信で活用）
 
 ランキング機能検証
 soccer-3dへのオンラインランキング機能導入に向けて、Docker環境上のAPIサーバーとの連携を検証しました。
 
 構成：
-IRankingApiClient → RankingApiClient（UnityWebRequest + UniTask）→ RankingRepository → RankingViewModel/RankingState → RankingView
+
+IRankingApiClient
+↓
+RankingApiClient（UnityWebRequest + UniTask）
+↓
+RankingRepository
+↓
+RankingViewModel / RankingState
+↓
+RankingView
 
 検証内容：
+
 Docker環境上のAPIサーバーとの非同期通信
 Newtonsoft.Jsonを使ったレスポンスのデシリアライズ
 FakeRankingApiClientによるモック実装で、Interfaceを介して本物と偽物のAPIを差し替えられることを実証
+苦労した点
 
-苦労した点：証明書関連のエラーでUnityWebRequestが弾かれる問題があり、BypassCertificateを実装して回避しました。
+証明書関連のエラーでUnityWebRequestが弾かれる問題があり、BypassCertificateを実装して回避しました。
 
 soccer-3dへの応用
-Singleton・VContainer・R3の実装ノウハウをそのまま本制作に導入し、ランキング機能実装時はここで検証したIRankingApiClient・RankingApiClientの設計をベースにする予定です。本番に組み込む前に検証するという開発フローそのものを、保守性を意識した開発姿勢として実践しました。
+Singleton・VContainer・R3の実装ノウハウをそのまま本制作に導入し、ランキング機能実装時はここで検証したIRankingApiClient・RankingApiClientの設計をベースにする予定です。
+
+本番に組み込む前に検証するという開発フローそのものを、保守性を意識した開発姿勢として実践しました。
 
 関連プロジェクト
 soccer-3d
